@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    color: rgb(11, 35, 39);
+    text-align: center;
+    font-size: 75px;
+}
+
+.website {
+    background-image: linear-gradient(rgb(24, 133, 24), rgb(28, 16, 16), rgb(65, 119, 93));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;  /* Ensure the div covers the entire viewport height */
+    width: 100%;
+    padding: 20px;  /* Adds some padding around the content */
+}
+
+.sub-heading {
+    color: rebeccapurple;
+    text-align: center;
+    margin-bottom: 20px;  /* Adds space between the heading and the content */
+}
+
+.bada-dabba {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap to the next line if they overflow */
+    justify-content: center;  /* Centers the items horizontally */
+
+}
+
+.chota-dabba {
+    flex: 1 1 calc(50% - 20px);  /* Two items per row, considering the gap */
+    max-width: calc(50% - 20px);  /* Ensures the max width of each item */
+    text-align: center;  /* Centers the text inside each box */
+    box-sizing: border-box;
+    padding: 20px;  /* Adds padding inside each box */
+}
+
+.chota-dabba img {
+    width: 70%;  /* Ensures the image takes up the full width of the container */
+    height: 600px;  /* Sets a fixed height for the images */
+    object-fit: cover;  /* Ensures the image covers the area without distorting */
+    border-radius: 10px;  /* Adds rounded corners to the images */
+}
+
+.chota-dabba a {
+    display: block;
+    margin-top: 10px;  /* Adds some space between the image and the text */
+    color: rgb(42, 139, 90);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 29px;  /* Sets a readable font size */
+    padding: 5px 0;  /* Adds padding to the text */
+    border-radius: 5px;  /* Adds rounded corners to the link */
+    background-color: rgba(0, 0, 0, 0.5);  /* Adds a semi-transparent background */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+.chota-dabba a:hover {
+    background-color: rgba(0, 0, 0, 0.8);  /* Darkens the background on hover */
+}
